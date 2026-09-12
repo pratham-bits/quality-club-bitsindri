@@ -8,7 +8,7 @@ export default function Contact() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">GET IN TOUCH</span>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>Let's connect.</motion.h1>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>Let&apos;s connect.</motion.h1>
           <p>Have a question, collaboration idea or want to know more about the club?</p>
         </div>
       </section>
