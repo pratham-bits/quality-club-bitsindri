@@ -3305,34 +3305,13 @@ p {
    ------------------------------------------------------------ */
 
 .page-hero .eyebrow {
-  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
-  padding-left: 18px;
-
   color: var(--purple);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.18em;
-}
-
-.page-hero .eyebrow::before {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-
-  width: 5px;
-  height: 5px;
-
-  border-radius: 50%;
-
-  background: var(--magenta);
-  box-shadow: 0 0 0 5px rgba(179, 38, 118, 0.08);
 }
 
 .page-hero h1 {
@@ -3511,5 +3490,45 @@ p {
 @media (prefers-reduced-motion: reduce) {
   .page-hero::before {
     animation: none;
+  }
+}
+
+/* ============================================================
+   NAVBAR — COMPACT DESKTOP
+   Prevents navigation labels from wrapping on medium desktops
+   ============================================================ */
+
+@media (max-width: 1400px) and (min-width: 1051px) {
+  .nav-shell {
+    width: calc(100% - 48px);
+    gap: 20px;
+  }
+
+  .brand-group {
+    gap: 12px;
+  }
+
+  .quality-brand {
+    width: 82px;
+    height: 56px;
+  }
+
+  .ifqm-brand {
+    width: 190px;
+    height: 44px;
+  }
+
+  .desktop-nav {
+    gap: 24px;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    font-size: 0.92rem;
+  }
+
+  .nav-cta {
+    padding: 13px 19px;
+    white-space: nowrap;
   }
 }

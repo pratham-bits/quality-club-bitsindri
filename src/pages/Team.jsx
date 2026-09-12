@@ -96,7 +96,7 @@ export default function Team() {
             ))}
           </div>
         </div>
-      </section>\
+      </section>
 
       {/* =====================================================
           CORE MEMBERS
