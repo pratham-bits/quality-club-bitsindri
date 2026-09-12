@@ -32,7 +32,7 @@ export const facultyLeaders = [
      * Example:
      * name: "Prof. ABC Kumar",
      */
-    name: "",
+    name: "Prof. Dr. Ghanshyam",
 
     /*
      * Official designation within the Quality Club.
@@ -63,7 +63,7 @@ export const facultyLeaders = [
      *
      * Keep the path empty until the actual photograph is added.
      */
-    image: "",
+    image: "/images/team/faculty/patron.jpg",
 
     /*
      * LinkedIn profile.
@@ -71,23 +71,23 @@ export const facultyLeaders = [
      * Keep empty if the faculty member does not have/
      * does not want to display a LinkedIn profile.
      */
-    linkedin: "",
+    linkedin: "linkedin.com/in/prof-dr-ghanshyam-81ba5838",
 
     /*
      * Official email address.
      *
      * Keep empty until the correct email is confirmed.
      */
-    email: "",
+    email: "ghanshyam123@gmail.com",
   },
 
   {
-    name: "",
+    name: "Prof. Maya Rajnarayan Ray",
     designation: "Professor-in-Charge",
     department: "",
     institute: "BIT Sindri",
-    image: "",
+    image: "/images/team/faculty/professor-in-charge.jpg",
     linkedin: "",
-    email: "",
+    email: "maya.civil@bitsindri.ac.in",
   },
 ];

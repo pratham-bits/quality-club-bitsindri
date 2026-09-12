@@ -5,6 +5,7 @@ import TeamMemberCard from "../components/TeamMemberCard";
 
 import { facultyLeaders } from "../data/faculty";
 import { teamMembers, teamYear } from "../data/team";
+import { coreMembers } from "../data/coreMembers";
 import { motion } from "framer-motion";
 
 export default function Team() {
@@ -74,7 +75,7 @@ export default function Team() {
           </div>
 
           <p className="team-section-intro">
-            The student leadership team responsible for driving
+            The final year students as the leadership team responsible for driving
             the Quality Club&apos;s activities, initiatives and
             engagement throughout the academic year.
           </p>
@@ -89,6 +90,41 @@ export default function Team() {
             {teamMembers.map((member) => (
               <Reveal
                 key={`${member.designation}-${member.name}`}
+              >
+                <TeamMemberCard member={member} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>\
+
+      {/* =====================================================
+          CORE MEMBERS
+          ===================================================== */}
+      <section className="section core-members-section">
+        <div className="container">
+          <div className="team-section-heading">
+            <div>
+              <span className="eyebrow">CORE TEAM</span>
+
+              <h2>Core Members</h2>
+            </div>
+
+            <div className="team-year-badge">
+              2026-27
+            </div>
+          </div>
+
+          <p className="team-section-intro">
+            Pre-final year students forming the core team of the
+            Quality Club and contributing to its initiatives,
+            activities and continuous development.
+          </p>
+
+          <div className="student-team-grid">
+            {coreMembers.map((member) => (
+              <Reveal
+                key={`${member.name}-${member.designation}`}
               >
                 <TeamMemberCard member={member} />
               </Reveal>

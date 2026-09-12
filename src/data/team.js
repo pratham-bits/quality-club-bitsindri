@@ -1,30 +1,30 @@
- /*
-  * ============================================================
-  * QUALITY CLUB, BIT SINDRI
-  * STUDENT EXECUTIVE COMMITTEE
-  * ============================================================
-  *
-  * HOW TO UPDATE THIS FILE:
-  *
-  * - Add/update a member's name in "name".
-  * - Add their designation in "designation".
-  * - Add their photo path in "images/team/students".
-  * - Add their email in "email".
-  * - Add their LinkedIn profile URL in "linkedin".
-  *
-  * IMPORTANT:
-  * - Do NOT add branch/department information here.
-  * - All student office bearers are part of one unified
-  *   Student Executive Committee.
-  * - There is intentionally no separate "Core Team" or
-  *   "Functional Team" structure.
-  * - Keep the official order of members unless there is a
-  *   specific reason to change it.
-  * - If a member does not yet have a photo, email or LinkedIn,
-  *   simply leave the corresponding field as an empty string.
-  *
-  * ============================================================
-  */
+/*
+ * ============================================================
+ * QUALITY CLUB, BIT SINDRI
+ * STUDENT EXECUTIVE COMMITTEE
+ * ============================================================
+ *
+ * HOW TO UPDATE THIS FILE:
+ *
+ * - Add/update a member's name in "name".
+ * - Add their designation in "designation".
+ * - Add their photo path in "images/team/students".
+ * - Add their email in "email".
+ * - Add their LinkedIn profile URL in "linkedin".
+ *
+ * IMPORTANT:
+ * - Do NOT add branch/department information here.
+ * - All student office bearers are part of one unified
+ *   Student Executive Committee.
+ * - There is intentionally no separate "Core Team" or
+ *   "Functional Team" structure.
+ * - Keep the official order of members unless there is a
+ *   specific reason to change it.
+ * - If a member does not yet have a photo, email or LinkedIn,
+ *   simply leave the corresponding field as an empty string.
+ *
+ * ============================================================
+ */
 
 export const teamYear = "2026–27";
 
