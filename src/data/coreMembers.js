@@ -104,8 +104,8 @@ export const coreMembers = [
         name: "Surya Pratap",
         designation: "Core Member",
         image: "/images/team/core-members/Surya-pratap.jpg",
-        email: "",
-        linkedin: "",
+        email: "suryapratapmodi401@gmail.com",
+        linkedin: "https://www.linkedin.com/in/suryaapratap",
     },
 
     {
