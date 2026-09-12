@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { siteConfig } from "../data/site";
 
 const links = [
+  { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
   { label: "Team", to: "/team" },
   { label: "Events", to: "/events" },

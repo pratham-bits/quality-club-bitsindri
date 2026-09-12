@@ -5,6 +5,7 @@ import TeamMemberCard from "../components/TeamMemberCard";
 
 import { facultyLeaders } from "../data/faculty";
 import { teamMembers, teamYear } from "../data/team";
+import { motion } from "framer-motion";
 
 export default function Team() {
   return (
@@ -15,8 +16,12 @@ export default function Team() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">OUR TEAM</span>
-
-          <h1>Meet the team.</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            Meet the team.
+          </motion.h1>
 
           <p>
             Faculty guidance and student leadership working

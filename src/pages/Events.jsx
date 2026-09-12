@@ -55,9 +55,8 @@ function EventImageGallery({ images, title }) {
 
   return (
     <div
-      className={`event-gallery ${
-        !hasMultipleImages ? "single-image" : ""
-      }`}
+      className={`event-gallery ${!hasMultipleImages ? "single-image" : ""
+        }`}
     >
       <motion.img
         key={images[currentIndex]}
@@ -93,9 +92,8 @@ function EventImageGallery({ images, title }) {
               <button
                 key={index}
                 type="button"
-                className={`event-gallery-dot ${
-                  index === currentIndex ? "active" : ""
-                }`}
+                className={`event-gallery-dot ${index === currentIndex ? "active" : ""
+                  }`}
                 onClick={() => setCurrentIndex(index)}
                 aria-label={`Go to image ${index + 1}`}
               />

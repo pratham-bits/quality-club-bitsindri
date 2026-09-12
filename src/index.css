@@ -90,14 +90,14 @@ p {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255,255,255,.94);
+  background: rgba(255, 255, 255, .94);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(231,231,238,.8);
+  border-bottom: 1px solid rgba(231, 231, 238, .8);
   transition: .25s ease;
 }
 
 .site-header.scrolled {
-  box-shadow: 0 10px 35px rgba(8,41,74,.07);
+  box-shadow: 0 10px 35px rgba(8, 41, 74, .07);
 }
 
 .nav-shell {
@@ -173,7 +173,7 @@ p {
   bottom: -9px;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg,var(--magenta),var(--purple));
+  background: linear-gradient(90deg, var(--magenta), var(--purple));
   transition: .25s;
 }
 
@@ -222,12 +222,10 @@ p {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    #fff 0%,
-    #fbf9fe 58%,
-    #f4e9fb 100%
-  );
+  background: linear-gradient(135deg,
+      #fff 0%,
+      #fbf9fe 58%,
+      #f4e9fb 100%);
 }
 
 .hero-inner {
@@ -246,13 +244,13 @@ p {
 }
 
 .hero-copy h1 span {
-  background: linear-gradient(90deg,var(--magenta),var(--purple));
+  background: linear-gradient(90deg, var(--magenta), var(--purple));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.hero-copy > p {
+.hero-copy>p {
   max-width: 650px;
   font-size: 1.2rem;
   line-height: 1.75;
@@ -289,7 +287,7 @@ p {
 .btn.primary {
   background: var(--navy);
   color: white;
-  box-shadow: 0 10px 25px rgba(8,41,74,.16);
+  box-shadow: 0 10px 25px rgba(8, 41, 74, .16);
 }
 
 .btn.primary:hover {
@@ -317,9 +315,9 @@ p {
 .hero-logo-card {
   position: relative;
   padding: 44px 35px;
-  border: 1px solid rgba(102,51,168,.14);
+  border: 1px solid rgba(102, 51, 168, .14);
   border-radius: 32px;
-  background: rgba(255,255,255,.72);
+  background: rgba(255, 255, 255, .72);
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -329,7 +327,7 @@ p {
 }
 
 .hero-logo-card img {
-  width: min(390px,100%);
+  width: min(390px, 100%);
   position: relative;
   z-index: 1;
 }
@@ -348,12 +346,10 @@ p {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(179,38,118,.17),
-    rgba(102,51,168,.08),
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(179, 38, 118, .17),
+      rgba(102, 51, 168, .08),
+      transparent 70%);
 }
 
 .hero-orb {
@@ -367,7 +363,7 @@ p {
   height: 420px;
   right: -170px;
   top: -150px;
-  background: rgba(102,51,168,.06);
+  background: rgba(102, 51, 168, .06);
 }
 
 .orb-two {
@@ -375,7 +371,7 @@ p {
   height: 300px;
   left: -160px;
   bottom: -180px;
-  background: rgba(179,38,118,.06);
+  background: rgba(179, 38, 118, .06);
 }
 
 
@@ -451,7 +447,7 @@ p {
 }
 
 .card-grid.four {
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .quality-card {
@@ -473,11 +469,9 @@ p {
   right: -80px;
   top: -80px;
   border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    rgba(179,38,118,.13),
-    rgba(102,51,168,.09)
-  );
+  background: linear-gradient(135deg,
+      rgba(179, 38, 118, .13),
+      rgba(102, 51, 168, .09));
 }
 
 .quality-card:hover {
@@ -526,7 +520,7 @@ p {
 
 .concept-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
 
@@ -559,7 +553,7 @@ p {
 ========================= */
 
 .partnership-section {
-  background: linear-gradient(135deg,#f7f2fa,#fff);
+  background: linear-gradient(135deg, #f7f2fa, #fff);
 }
 
 .partnership {
@@ -573,7 +567,7 @@ p {
   margin: 12px 0 20px;
 }
 
-.partnership > div:first-child p {
+.partnership>div:first-child p {
   max-width: 590px;
   font-size: 1.08rem;
   line-height: 1.8;
@@ -622,12 +616,10 @@ p {
 }
 
 .join-box {
-  background: linear-gradient(
-    120deg,
-    var(--navy),
-    #183E64 55%,
-    #57308E
-  );
+  background: linear-gradient(120deg,
+      var(--navy),
+      #183E64 55%,
+      #57308E);
   color: white;
   border-radius: 30px;
   padding: 60px 65px;
@@ -647,12 +639,12 @@ p {
   right: -120px;
   bottom: -220px;
   border-radius: 50%;
-  border: 70px solid rgba(255,255,255,.05);
+  border: 70px solid rgba(255, 255, 255, .05);
   pointer-events: none;
   z-index: 0;
 }
 
-.join-box > * {
+.join-box>* {
   position: relative;
   z-index: 1;
 }
@@ -677,7 +669,7 @@ p {
 
 .page-hero {
   padding: 110px 0 95px;
-  background: linear-gradient(135deg,#fff,#f5eff9);
+  background: linear-gradient(135deg, #fff, #f5eff9);
   border-bottom: 1px solid var(--border);
 }
 
@@ -1197,6 +1189,7 @@ p {
 .student-team-card:hover .student-photo-frame {
   box-shadow: 0 16px 34px rgba(8, 41, 74, 0.12);
 }
+
 .student-team-card:hover .student-team-info {
   border-color: #d9c7e8;
   box-shadow:
@@ -1599,11 +1592,9 @@ p {
   height: 4px;
   margin: 20px 0 22px;
   border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    var(--purple),
-    var(--magenta)
-  );
+  background: linear-gradient(90deg,
+      var(--purple),
+      var(--magenta));
 }
 
 .event-content h4 {
@@ -1868,7 +1859,7 @@ p {
   box-shadow: var(--shadow);
 }
 
-.contact-card > svg:first-child {
+.contact-card>svg:first-child {
   color: var(--purple);
 }
 
@@ -1936,7 +1927,7 @@ p {
 .footer-brand-divider {
   width: 1px;
   height: 58px;
-  background: rgba(255,255,255,.24);
+  background: rgba(255, 255, 255, .24);
   flex: none;
 }
 
@@ -1979,7 +1970,7 @@ p {
   height: 38px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(255,255,255,.16);
+  border: 1px solid rgba(255, 255, 255, .16);
   border-radius: 50%;
   color: #C7D2DE;
   transition: .25s ease;
@@ -1987,7 +1978,7 @@ p {
 
 .footer-socials a:hover {
   color: white;
-  border-color: rgba(255,255,255,.38);
+  border-color: rgba(255, 255, 255, .38);
   transform: translateY(-2px);
 }
 
@@ -2015,7 +2006,7 @@ p {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
   padding: 23px 0;
   display: flex;
   justify-content: space-between;
@@ -2023,6 +2014,7 @@ p {
   color: #8FA3B9;
   font-size: .82rem;
 }
+
 /* ============================================================
    CLUB LEADERSHIP CONTACTS
    ============================================================ */
@@ -2057,7 +2049,7 @@ p {
 
 
 /* Phone icon */
-.footer-leader > svg {
+.footer-leader>svg {
   flex: none;
   color: #C7D2DE;
   transition: color 0.25s ease;
@@ -2065,7 +2057,7 @@ p {
 
 
 /* Name + designation wrapper */
-.footer-leader > span {
+.footer-leader>span {
   display: grid;
   gap: 1px;
 }
@@ -2094,7 +2086,7 @@ p {
   transform: translateX(3px);
 }
 
-.footer-leader:hover > svg {
+.footer-leader:hover>svg {
   color: #DDB9EE;
 }
 
@@ -2114,7 +2106,7 @@ p {
 
   .card-grid.four,
   .concept-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-inner,
@@ -2175,7 +2167,7 @@ p {
     max-height: 0;
     overflow: hidden;
     padding: 0 20px;
-    transition: max-height .35s,padding .35s;
+    transition: max-height .35s, padding .35s;
     background: white;
   }
 
@@ -2185,7 +2177,7 @@ p {
     border-top: 1px solid var(--border);
   }
 
-  .mobile-menu > a {
+  .mobile-menu>a {
     padding: 13px 0;
     border-bottom: 1px solid #f0f0f4;
     font-weight: 700;
@@ -2283,7 +2275,7 @@ p {
     font-size: 2.25rem;
   }
 
-  .hero-copy > p {
+  .hero-copy>p {
     font-size: 1.03rem;
   }
 
@@ -2378,7 +2370,7 @@ p {
   }
 
   /* Vision & Mission mobile adjustments */
-    .vision-card {
+  .vision-card {
     padding: 34px 28px;
     min-height: auto;
   }
@@ -2606,11 +2598,9 @@ p {
   align-items: center;
   gap: 28px;
   padding: 44px 48px;
-  background: linear-gradient(
-    135deg,
-    #f7f4fa,
-    #f8fafc
-  );
+  background: linear-gradient(135deg,
+      #f7f4fa,
+      #f8fafc);
   border: 1px solid var(--border);
   border-radius: 24px;
 }
@@ -2750,6 +2740,7 @@ p {
     height: 58px;
   }
 }
+
 /* ============================================================
    WIDE-SCREEN / ZOOM-OUT RESPONSIVE SYSTEM
    ============================================================
@@ -3023,6 +3014,7 @@ p {
    ------------------------------------------------------------ */
 
 @media (min-width: 1800px) {
+
   .two-column,
   .partnership,
   .contact-grid {
@@ -3171,3 +3163,353 @@ p {
 /* ============================================================
    END FINAL TEAM CARD ALIGNMENT + SOCIAL ICON SAFETY
    ============================================================ */
+/* ============================================================
+   PREMIUM INNER PAGE HERO SYSTEM
+   About / Team / Events / FAQs / Contact
+   ============================================================ */
+
+.page-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  padding: 92px 0 88px;
+
+  background:
+    radial-gradient(circle at 82% 35%,
+      rgba(102, 51, 168, 0.11),
+      transparent 27%),
+    radial-gradient(circle at 96% 90%,
+      rgba(179, 38, 118, 0.08),
+      transparent 25%),
+    linear-gradient(135deg,
+      #ffffff 0%,
+      #fbf9fd 52%,
+      #f4edf9 100%);
+
+  border-bottom: 1px solid rgba(102, 51, 168, 0.10);
+}
+
+/* Main content stays above decoration */
+.page-hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* ------------------------------------------------------------
+   Decorative geometric system
+   ------------------------------------------------------------ */
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 470px;
+
+  right: -155px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(102, 51, 168, 0.13);
+
+  box-shadow:
+    0 0 0 34px rgba(102, 51, 168, 0.025),
+    0 0 0 72px rgba(179, 38, 118, 0.018);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Inner circle */
+.page-hero::after {
+  content: "";
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(102, 51, 168, 0.12),
+      rgba(102, 51, 168, 0.035) 45%,
+      transparent 70%);
+
+  border: 1px solid rgba(179, 38, 118, 0.12);
+
+  box-shadow:
+    inset 0 0 50px rgba(102, 51, 168, 0.035);
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------
+   Small floating quality nodes
+   ------------------------------------------------------------ */
+
+.page-hero .container::before {
+  content: "";
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  right: 175px;
+  top: 35px;
+
+  border-radius: 50%;
+
+  background: var(--magenta);
+
+  box-shadow:
+    0 0 0 7px rgba(179, 38, 118, 0.08),
+    0 0 25px rgba(179, 38, 118, 0.22);
+
+  z-index: 4;
+}
+
+.page-hero .container::after {
+  content: "";
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  right: 95px;
+  bottom: 45px;
+
+  border-radius: 50%;
+
+  background: var(--purple);
+
+  box-shadow:
+    0 0 0 6px rgba(102, 51, 168, 0.08),
+    0 0 22px rgba(102, 51, 168, 0.18);
+
+  z-index: 4;
+}
+
+/* ------------------------------------------------------------
+   Hero typography
+   ------------------------------------------------------------ */
+
+.page-hero .eyebrow {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding-left: 18px;
+
+  color: var(--purple);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.page-hero .eyebrow::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: var(--magenta);
+  box-shadow: 0 0 0 5px rgba(179, 38, 118, 0.08);
+}
+
+.page-hero h1 {
+  position: relative;
+
+  max-width: 850px;
+
+  margin: 15px 0 20px;
+
+  font-size: clamp(3.1rem, 6vw, 5.6rem);
+
+  letter-spacing: -0.055em;
+
+  color: var(--navy);
+
+  z-index: 3;
+}
+
+.page-hero p {
+  position: relative;
+
+  max-width: 680px;
+
+  font-size: 1.12rem;
+  line-height: 1.8;
+
+  color: #617084;
+
+  z-index: 3;
+}
+
+/* ------------------------------------------------------------
+   Subtle gradient accent behind heading
+   ------------------------------------------------------------ */
+
+.page-hero h1::after {
+  content: "";
+
+  position: absolute;
+
+  width: 130px;
+  height: 130px;
+
+  left: -35px;
+  top: -30px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(circle,
+      rgba(179, 38, 118, 0.075),
+      transparent 70%);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------
+   Page hero entrance animation
+   ------------------------------------------------------------ */
+
+@keyframes pageHeroFloat {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 7px)) rotate(1deg);
+  }
+
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+.page-hero::before {
+  animation: pageHeroFloat 8s ease-in-out infinite;
+}
+
+/* ------------------------------------------------------------
+   TABLET
+   ------------------------------------------------------------ */
+
+@media (max-width: 1050px) {
+  .page-hero {
+    min-height: 350px;
+    padding: 82px 0 76px;
+  }
+
+  .page-hero h1 {
+    max-width: 720px;
+    font-size: clamp(3rem, 7vw, 4.8rem);
+  }
+
+  .page-hero::before {
+    right: -210px;
+  }
+
+  .page-hero::after {
+    right: -90px;
+  }
+}
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 700px) {
+  .page-hero {
+    min-height: 320px;
+    padding: 72px 0 64px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.55rem, 11vw, 3.5rem);
+    max-width: 100%;
+    margin-top: 13px;
+  }
+
+  .page-hero p {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .page-hero::before {
+    width: 320px;
+    height: 320px;
+    right: -205px;
+  }
+
+  .page-hero::after {
+    width: 175px;
+    height: 175px;
+    right: -95px;
+  }
+
+  .page-hero .container::before {
+    right: 85px;
+    top: 24px;
+  }
+
+  .page-hero .container::after {
+    right: 35px;
+    bottom: 28px;
+  }
+}
+
+/* ------------------------------------------------------------
+   VERY SMALL PHONES
+   ------------------------------------------------------------ */
+
+@media (max-width: 440px) {
+  .page-hero {
+    min-height: 300px;
+    padding: 62px 0 56px;
+  }
+
+  .page-hero .eyebrow {
+    font-size: 0.69rem;
+    letter-spacing: 0.14em;
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-hero p {
+    font-size: 0.96rem;
+  }
+}
+
+/* ------------------------------------------------------------
+   REDUCED MOTION
+   ------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  .page-hero::before {
+    animation: none;
+  }
+}

@@ -47,7 +47,7 @@ export default function About() {
         <div className="container">
           <span className="eyebrow">ABOUT THE CLUB</span>
           <motion.h1
-            initial={{ opacity: 0, y: 25 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
           >
             Quality is a way of thinking.
