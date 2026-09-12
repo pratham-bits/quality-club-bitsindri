@@ -19,7 +19,7 @@ export default function Contact() {
             <div>
               <span className="eyebrow">CONTACT US</span>
               <h2>Reach out to the Quality Club, BIT Sindri.</h2>
-              <p className="lead">For official queries and collaboration, use the contact details below.</p>
+              <p className="lead">For official queries and collaboration, use the contact details provided here.</p>
             </div>
           </Reveal>
 
