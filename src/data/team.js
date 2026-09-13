@@ -51,9 +51,9 @@ export const teamMembers = [
   {
     name: "Gajendra N. Pathak",
     designation: "President",
-    image: "",
-    email: "",
-    linkedin: "",
+    image: "/images/team/students/Gajendra N. Pathak.png",
+    email: "gajendrapathak5@gmail.com",
+    linkedin: "https://www.linkedin.com/in/gajendra2004",
   },
 
   {
@@ -67,9 +67,9 @@ export const teamMembers = [
   {
     name: "Aman Rai",
     designation: "Secretary",
-    image: "",
-    email: "",
-    linkedin: "",
+    image: "images/team/students/Aman Rai.jpg",
+    email: "amaninkandra@gmail.com",
+    linkedin: "https://www.linkedin.com/in/aman-rai-b50044291?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
 
   {
@@ -83,9 +83,9 @@ export const teamMembers = [
   {
     name: "Shruti Pandey",
     designation: "Industry Relations",
-    image: "",
-    email: "",
-    linkedin: "",
+    image: "images/team/students/Shruti Pandey.jpg",
+    email: "shrutipandey8742@gmail.com",
+    linkedin: "https://www.linkedin.com/in/shruti-pandey-9521a7292?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
 
   {
@@ -99,21 +99,21 @@ export const teamMembers = [
   {
     name: "Mohit Kumar",
     designation: "Events & Experiential Learning",
-    image: "",
-    email: "",
-    linkedin: "",
+    image: "images/team/students/Mohit Kumar.jpg",
+    email: "mohit.bitsindri27@gmail.com",
+    linkedin: "https://www.linkedin.com/in/mohit-kumar-bits?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
 
-  {
-    name: "Nivedita Gupta",
-    designation: "Public Engagement & Communication",
-    image: "",
-    email: "",
-    linkedin: "",
-  },
+  // {
+  //   name: "Nivedita Gupta",
+  //   designation: "Public Engagement & Communication",
+  //   image: "",
+  //   email: "",
+  //   linkedin: "",
+  // },
 
   {
-    name: "Sashi",
+    name: "Sashi Kumar",
     designation: "Technology & Innovation",
     image: "images/team/students/Shashi Kumar.jpg",
     email: "shashi.ug23ce0087@bitsindri.ac.in",
@@ -123,9 +123,9 @@ export const teamMembers = [
   {
     name: "Rajveer Sharma",
     designation: "Technology & Innovation",
-    image: "",
-    email: "",
-    linkedin: "",
+    image: "images/team/students/Rajveer Sharma.jpeg",
+    email: "rajveers221205@gmail.com",
+    linkedin: "https://www.linkedin.com/in/rajveer-sharma-67959a315",
   },
 
   {
@@ -144,13 +144,13 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/komalsharma-it-bitsindri",
   },
 
-  {
-    name: "Anuj Kumar Pandey",
-    designation: "Learning & Content",
-    image: "",
-    email: "",
-    linkedin: "",
-  },
+  // {
+  //   name: "Anuj Kumar Pandey",
+  //   designation: "Learning & Content",
+  //   image: "",
+  //   email: "",
+  //   linkedin: "",
+  // },
 
   {
     name: "Abhishek Mandal",
@@ -160,27 +160,27 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/abhishek-mandal-1a963a2b9?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
 
-  {
-    name: "Vivek Kumar",
-    designation: "Documentation & Reports",
-    image: "",
-    email: "",
-    linkedin: "",
-  },
+  // {
+  //   name: "Vivek Kumar",
+  //   designation: "Documentation & Reports",
+  //   image: "",
+  //   email: "",
+  //   linkedin: "",
+  // },
 
-  {
-    name: "Afsar Ali",
-    designation: "Design & Creativity",
-    image: "",
-    email: "",
-    linkedin: "",
-  },
+  // {
+  //   name: "Afsar Ali",
+  //   designation: "Design & Creativity",
+  //   image: "",
+  //   email: "",
+  //   linkedin: "",
+  // },
 
-  {
-    name: "Sujal Sagar",
-    designation: "Marketing & Branding",
-    image: "",
-    email: "",
-    linkedin: "",
-  },
+  // {
+  //   name: "Sujal Sagar",
+  //   designation: "Marketing & Branding",
+  //   image: "",
+  //   email: "",
+  //   linkedin: "",
+  // },
 ];
