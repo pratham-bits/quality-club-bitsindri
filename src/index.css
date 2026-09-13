@@ -1518,6 +1518,49 @@ p {
   margin-top: 52px;
 }
 
+/* =========================
+   VIEW MORE EVENTS
+========================= */
+
+.events-view-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+}
+
+.events-view-more button {
+  appearance: none;
+  border: 1px solid #d9c7e8;
+  background: #ffffff;
+  color: var(--navy);
+
+  padding: 13px 28px;
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.events-view-more button:hover {
+  background: var(--navy);
+  color: #ffffff;
+  border-color: var(--navy);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(8, 41, 74, 0.14);
+}
+
 .event-card {
   display: grid;
   grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.1fr);

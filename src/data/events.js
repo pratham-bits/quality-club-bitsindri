@@ -109,7 +109,7 @@ export const events = [
 
   {
     title: "Lessons from Antarctica: Quality in Scientific Missions",
-    date: "16 February 2026",
+    date: "27 February 2026",
     linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_quality-management-antarctica-activity-7295374063369572352-xT5G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFo4y-kBpTj01bK5W7xXf4W6sV8x8K722U&utm_content=1&utm_campaign=one_share_sheet",
     contentHeading: "Quality Beyond Boundaries",
     description:
@@ -122,8 +122,9 @@ export const events = [
       "Adaptability and continuous improvement in challenging situations.",
     ],
     images: [
-      "/images/events/event-2/image-1.jpg",
+      "/images/events/event-2/image-1.jpeg",
       "/images/events/event-2/image-2.jpg",
+      "/images/events/event-2/image-3.jpg",
     ],
   },
 
@@ -143,11 +144,14 @@ export const events = [
     ],
     images: [
       "/images/events/event-3/image-1.jpg",
+      "/images/events/event-3/image-2.jpg",
     ],
   },
 
   {
     title: "Quality Edge Series – Episode 2",
+    date: "7 June 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_get-ready-for-an-insightful-and-enriching-activity-7468275940566056961-V8VQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
     contentHeading: "Turning Quality Tools into Better Decisions",
     description:
       "The second episode of the Quality Edge Series introduced students to the Seven Basic Quality Control Tools and their role in systematic problem-solving. Through practical industry perspectives from Tata Steel, the session demonstrated how quality tools can help identify root causes, recognize recurring issues, prioritize problems, and support better decisions.",
@@ -165,6 +169,8 @@ export const events = [
 
   {
     title: "School Outreach Programme – De Nobili School, Sindri",
+    date: "11 April 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_school-outreach-programme-activity-7461493010090676224-h6iT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
     contentHeading: "Building Skills Beyond the Classroom",
     description:
       "The Quality Club, BIT Sindri conducted an interactive outreach programme at De Nobili School, Sindri, encouraging students to look beyond academic marks and develop essential skills for their personal, academic, and future professional growth.",
@@ -183,6 +189,8 @@ export const events = [
 
   {
     title: "Quality Tools & Problem-Solving Orientation",
+    date: "01 February 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_qualitymanagement-problemsolving-engineeringeducation-activity-7423692191702769664-RChq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
     contentHeading: "Developing a Quality-Driven Mindset",
     description:
       "An interactive orientation session introducing students to practical quality tools and systematic problem-solving techniques. The session demonstrated how tools such as Pareto Analysis, Fishbone Diagrams, and Cost of Poor Quality can help students break down complex problems, identify root causes, and focus on areas with the greatest impact.",
@@ -196,6 +204,7 @@ export const events = [
     images: [
       "/images/events/event-6/image-1.jpg",
       "/images/events/event-6/image-2.jpg",
+      "/images/events/event-6/image-3.jpg",
     ],
   },
 
