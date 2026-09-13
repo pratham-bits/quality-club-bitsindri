@@ -262,6 +262,7 @@ function PastEventCard({ event }) {
 
 export default function Events() {
   const [selectedYear, setSelectedYear] = useState("all");
+  const [visibleCount, setVisibleCount] = useState(6);
 
   /*
    * Extract years automatically from event dates.
@@ -302,6 +303,9 @@ export default function Events() {
     });
   }, [selectedYear]);
 
+  useEffect(() => {
+    setVisibleCount(6);
+  }, [selectedYear]);
   return (
     <>
       {/* ======================================================
@@ -400,12 +404,23 @@ export default function Events() {
               FILTERED EVENT LIST
               ================================================== */}
           <div className="event-list">
-            {filteredEvents.map((event) => (
+            {filteredEvents.slice(0, visibleCount).map((event) => (
               <Reveal key={event.title}>
                 <PastEventCard event={event} />
               </Reveal>
             ))}
           </div>
+
+          {visibleCount < filteredEvents.length && (
+            <div className="events-view-more">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((prev) => prev + 6)}
+              >
+                View More
+              </button>
+            </div>
+          )}
 
           {filteredEvents.length === 0 && (
             <div className="no-filtered-events">
