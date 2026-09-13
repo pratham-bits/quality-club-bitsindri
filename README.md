@@ -49,11 +49,13 @@ quality-club-bitsindri/
 │       │   ├── event-4/
 │       │   ├── event-5/
 │       │   ├── event-6/
-│       │   └── event-7/
+│       │   ├── event-7/
+│       │   └── event-8/
 │       │
 │       ├── team/
 │       │   ├── faculty/
-│       │   └── students/
+│       │   ├── students/
+│       │   └── core-members/
 │       │
 │       ├── quality-club-logo.png
 │       ├── ifqm-logo-header.svg
@@ -78,7 +80,8 @@ quality-club-bitsindri/
 │   │   ├── faqs.js
 │   │   ├── qualityConcepts.js
 │   │   ├── site.js
-│   │   └── team.js
+│   │   ├── team.js
+│   │   └── coreMembers.js
 │   │
 │   ├── layouts/
 │   │   └── MainLayout.jsx
