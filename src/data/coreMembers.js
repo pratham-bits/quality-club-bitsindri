@@ -22,7 +22,7 @@
 export const coreMembers = [
     {
         name: "Abhishek Modi",
-        designation: "Content Writer",
+        designation: "Content Writing",
         image: "/images/team/core-members/Abhishek-modi.png",
         email: "abhishekmodi279@gmail.com",
         linkedin: "https://www.linkedin.com/in/abhishek-modi-879121334?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
@@ -30,7 +30,7 @@ export const coreMembers = [
 
     {
         name: "Prarthana Kumari",
-        designation: "Team Manager and Content Writer",
+        designation: "Team Management and Content Writing",
         image: "/images/team/core-members/Prarthana-kumari.jpg",
         email: "parulias2005@gmail.com",
         linkedin: "https://www.linkedin.com/in/prarthana-kumari-835a15358",
@@ -38,7 +38,7 @@ export const coreMembers = [
 
     {
         name: "Varsha Verma",
-        designation: "Team Manager",
+        designation: "Team Management",
         image: "/images/team/core-members/Varsha-verma.png",
         email: "100varshaverma100@gmail.com",
         linkedin: "https://www.linkedin.com/in/varsha-verma-6589a6339?",
@@ -46,7 +46,7 @@ export const coreMembers = [
 
     {
         name: "Hans Raj",
-        designation: "Software Developer",
+        designation: "Software Development",
         image: "/images/team/core-members/Hans-raj.png",
         email: "hansraj9633@gmail.com",
         linkedin: "http://linkedin.com/in/hans-raj-166171330",
@@ -54,7 +54,7 @@ export const coreMembers = [
 
     {
         name: "Pratham Kumar Rana",
-        designation: "AI & Software Developer",
+        designation: "AI & Software Development",
         image: "/images/team/core-members/Pratham-kumar.jpg",
         email: "userpratham4016@gmail.com",
         linkedin: "https://www.linkedin.com/in/pratham-kumar-rana-88920233b",
@@ -62,7 +62,7 @@ export const coreMembers = [
 
     {
         name: "Suraj Kumar ",
-        designation: "Content Writer",
+        designation: "Content Writing",
         image: "/images/team/core-members/Suraj-kumar.png",
         email: "surajk.meug24@bitsindri.ac.in",
         linkedin: "https://www.linkedin.com/in/suraj-kumar-081a44310",
@@ -70,7 +70,7 @@ export const coreMembers = [
 
     {
         name: "Abhavya Ranjan",
-        designation: "Content Writer",
+        designation: "Content Writing",
         image: "/images/team/core-members/Abhavya-ranjan.jpg",
         email: "abhavya538@gmail.com",
         linkedin: "linkedin.com/in/abhavya-ra17229207",
@@ -78,7 +78,7 @@ export const coreMembers = [
 
     {
         name: "Gagan Kumar Yadav ",
-        designation: "Graphic Designer",
+        designation: "Graphic Designing",
         image: "/images/team/core-members/Gagan-yadav.png",
         email: "yadavgagan982@gmail.com",
         linkedin: "https://www.linkedin.com/in/gagan-yadav-506690330",
@@ -86,7 +86,7 @@ export const coreMembers = [
 
     {
         name: "Sonjog Mir",
-        designation: "Graphic Designer",
+        designation: "Graphic Designing",
         image: "/images/team/core-members/Sonjog-mir.jpg",
         email: "sonjog.ug24met0060@bitsindri.ac.in",
         linkedin: "https://surl.lt/ubdkij",
@@ -94,7 +94,7 @@ export const coreMembers = [
 
     {
         name: "Khushi Bhatt",
-        designation: "Software Developer",
+        designation: "Software Development",
         image: "/images/team/core-members/Khushi-bhatt.jpeg",
         email: "bhattkhu1422@gmail.com",
         linkedin: "https://www.linkedin.com/in/khushi-bhatt-97a64b376",
@@ -102,7 +102,7 @@ export const coreMembers = [
 
     {
         name: "Surya Pratap",
-        designation: "Graphic Designer",
+        designation: "Graphic Designing",
         image: "/images/team/core-members/Surya-pratap.jpg",
         email: "suryapratapmodi401@gmail.com",
         linkedin: "https://www.linkedin.com/in/suryaapratap",
@@ -110,7 +110,7 @@ export const coreMembers = [
 
     {
         name: "Satyam Prasad",
-        designation: "Graphic Designer",
+        designation: "Graphic Designing",
         image: "/images/team/core-members/Satyam-prasad.jpg",
         email: "sahusatyam957@gmail.com",
         linkedin: "http://linkedin.com/in/satyam-prasad-24456a339",
