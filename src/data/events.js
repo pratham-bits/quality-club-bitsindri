@@ -91,6 +91,8 @@ export const upcomingEvents = [
 export const events = [
   {
     title: "Basics of Total Quality Management",
+    date: "1 February 2025",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_qualitymanagement-webinar-scmishra-activity-7290974309345312769-kCe2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
     contentHeading: "Foundations of Quality Management",
     description:
       "An introductory session on the fundamentals of Total Quality Management, helping students understand the importance of quality principles, structured processes, and industry-oriented quality practices.",
@@ -107,6 +109,8 @@ export const events = [
 
   {
     title: "Lessons from Antarctica: Quality in Scientific Missions",
+    date: "16 February 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_quality-management-antarctica-activity-7295374063369572352-xT5G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFo4y-kBpTj01bK5W7xXf4W6sV8x8K722U&utm_content=1&utm_campaign=one_share_sheet",
     contentHeading: "Quality Beyond Boundaries",
     description:
       "An inspiring session exploring how precision, reliability, discipline, and quality practices become essential in scientific missions conducted under extreme conditions. Through insights from Antarctica and real scientific fieldwork, students gained a broader understanding of how quality directly influences mission success, safety, and reliability.",
@@ -125,6 +129,8 @@ export const events = [
 
   {
     title: "Quality Edge Series – Episode 1",
+    date: "5 April 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_qualityedgeseries-ankitajha-tatasteel-activity-7447528221824172032-bAEl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
     contentHeading: "Building Quality into Everyday Operations",
     description:
       "The inaugural episode of the Quality Edge Series connected classroom concepts with industry practice through an interactive session on Cost of Poor Quality (COPQ) and the 5S Method of Lean Manufacturing. Ms. Ankita Jha of Tata Steel shared practical insights into workplace discipline, operational efficiency, and identifying quality-related losses.",
@@ -195,6 +201,8 @@ export const events = [
 
   {
     title: "Orientation Seminar 2026",
+    date: "8 January 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_qualityclub-bitsindri-engineeringeducation-activity-7415759108848472064-ZPWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
     contentHeading: "From Classroom Concepts to Industry Practices",
     description:
       "An orientation seminar designed to introduce second-year students to industry practices, quality-driven thinking, and structured systems beyond conventional classroom learning. The session explored the importance of Standard Operating Procedures (SOPs), introduced the principles of Six Sigma, and encouraged students to approach real-world challenges through systematic thinking.",

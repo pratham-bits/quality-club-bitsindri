@@ -4,23 +4,17 @@ import {
   CalendarDays,
   CheckCircle2,
   ExternalLink,
+  Linkedin,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import SectionHeading from "../components/SectionHeading";
 import Reveal from "../components/Reveal";
 import { upcomingEvents, pastEvents } from "../data/events";
 
-
 /*
  * ============================================================
  * EVENT IMAGE GALLERY
- * ============================================================
- *
- * Used only for past events that contain multiple images.
- *
- * - One image  → displayed as a static image.
- * - Multiple images → slideshow with arrows and dots.
  * ============================================================
  */
 
@@ -105,22 +99,9 @@ function EventImageGallery({ images, title }) {
   );
 }
 
-
 /*
  * ============================================================
  * UPCOMING EVENT CARD
- * ============================================================
- *
- * Displays:
- * - Event poster
- * - Event title
- * - Date
- * - Description
- * - Highlights
- * - Registration button
- *
- * The component is data-driven so future events can be added
- * from `src/data/events.js` without changing this component.
  * ============================================================
  */
 
@@ -179,17 +160,9 @@ function UpcomingEventCard({ event }) {
   );
 }
 
-
 /*
  * ============================================================
  * NO UPCOMING EVENTS STATE
- * ============================================================
- *
- * Displayed automatically when `upcomingEvents` is empty.
- *
- * This is preferable to leaving the section blank because it
- * communicates that the club is active while there is simply
- * no event currently scheduled.
  * ============================================================
  */
 
@@ -201,7 +174,9 @@ function NoUpcomingEvents() {
       </div>
 
       <div>
-        <span className="eyebrow">NOTHING SCHEDULED YET</span>
+        <span className="eyebrow">
+          NOTHING SCHEDULED YET
+        </span>
 
         <h3>No upcoming events at the moment.</h3>
 
@@ -215,6 +190,69 @@ function NoUpcomingEvents() {
   );
 }
 
+/*
+ * ============================================================
+ * PAST EVENT CARD
+ * ============================================================
+ */
+
+function PastEventCard({ event }) {
+  return (
+    <article className="event-card">
+      <EventImageGallery
+        images={event.images}
+        title={event.title}
+      />
+
+      <div className="event-content">
+        <h3>{event.title}</h3>
+
+        <div className="event-accent" />
+
+        <h4>{event.contentHeading}</h4>
+
+        <p className="event-description">
+          {event.description}
+        </p>
+
+        <ul className="event-highlights">
+          {event.highlights.map((highlight) => (
+            <li key={highlight}>
+              <CheckCircle2 size={18} />
+              <span>{highlight}</span>
+            </li>
+          ))}
+        </ul>
+
+        {/* ==================================================
+            EVENT ACTION ROW
+            Date + LinkedIn
+            ================================================== */}
+        <div className="event-action-row">
+          {event.date && (
+            <div className="event-date">
+              <CalendarDays size={18} />
+              <span>{event.date}</span>
+            </div>
+          )}
+
+          {event.linkedin && (
+            <a
+              href={event.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="event-linkedin"
+              aria-label={`View ${event.title} on LinkedIn`}
+              title="View LinkedIn post"
+            >
+              <Linkedin size={19} />
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
 
 /*
  * ============================================================
@@ -223,6 +261,47 @@ function NoUpcomingEvents() {
  */
 
 export default function Events() {
+  const [selectedYear, setSelectedYear] = useState("all");
+
+  /*
+   * Extract years automatically from event dates.
+   * Example:
+   * "1 February 2025" → "2025"
+   */
+  const availableYears = useMemo(() => {
+    const years = pastEvents
+      .map((event) => {
+        const match = event.date?.match(/\b(20\d{2})\b/);
+        return match ? match[1] : null;
+      })
+      .filter(Boolean);
+
+    return [...new Set(years)].sort((a, b) => b - a);
+  }, []);
+
+  /*
+   * Filter past events by selected year.
+   */
+  const filteredEvents = useMemo(() => {
+    let events = pastEvents;
+
+    // Filter by selected year
+    if (selectedYear !== "all") {
+      events = events.filter((event) => {
+        const match = event.date?.match(/\b(20\d{2})\b/);
+        return match?.[1] === selectedYear;
+      });
+    }
+
+    // Sort latest → oldest
+    return [...events].sort((a, b) => {
+      const dateA = a.date ? new Date(a.date).getTime() : 0;
+      const dateB = b.date ? new Date(b.date).getTime() : 0;
+
+      return dateB - dateA;
+    });
+  }, [selectedYear]);
+
   return (
     <>
       {/* ======================================================
@@ -247,14 +326,8 @@ export default function Events() {
         </div>
       </section>
 
-
       {/* ======================================================
-          UPCOMING EVENTS SECTION
-
-          IMPORTANT:
-          The section automatically switches between:
-          1. Upcoming event cards, when events are available.
-          2. Professional empty state, when there are none.
+          UPCOMING EVENTS
           ====================================================== */}
       <section className="section upcoming-events-section">
         <div className="container">
@@ -279,9 +352,8 @@ export default function Events() {
         </div>
       </section>
 
-
       {/* ======================================================
-          PAST EVENTS SECTION
+          PAST EVENTS
           ====================================================== */}
       <section className="section events-section">
         <div className="container">
@@ -290,39 +362,60 @@ export default function Events() {
             title="Learning through experience."
           />
 
+          {/* ==================================================
+              YEAR FILTER
+              ================================================== */}
+          {availableYears.length > 0 && (
+            <div className="event-year-filter">
+              <button
+                type="button"
+                className={
+                  selectedYear === "all"
+                    ? "active"
+                    : ""
+                }
+                onClick={() => setSelectedYear("all")}
+              >
+                All
+              </button>
+
+              {availableYears.map((year) => (
+                <button
+                  key={year}
+                  type="button"
+                  className={
+                    selectedYear === year
+                      ? "active"
+                      : ""
+                  }
+                  onClick={() => setSelectedYear(year)}
+                >
+                  {year}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* ==================================================
+              FILTERED EVENT LIST
+              ================================================== */}
           <div className="event-list">
-            {pastEvents.map((event) => (
+            {filteredEvents.map((event) => (
               <Reveal key={event.title}>
-                <article className="event-card">
-                  <EventImageGallery
-                    images={event.images}
-                    title={event.title}
-                  />
-
-                  <div className="event-content">
-                    <h3>{event.title}</h3>
-
-                    <div className="event-accent" />
-
-                    <h4>{event.contentHeading}</h4>
-
-                    <p className="event-description">
-                      {event.description}
-                    </p>
-
-                    <ul className="event-highlights">
-                      {event.highlights.map((highlight) => (
-                        <li key={highlight}>
-                          <CheckCircle2 size={18} />
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </article>
+                <PastEventCard event={event} />
               </Reveal>
             ))}
           </div>
+
+          {filteredEvents.length === 0 && (
+            <div className="no-filtered-events">
+              <CalendarDays size={28} />
+
+              <p>
+                No events found for {selectedYear}.
+              </p>
+            </div>
+          )}
         </div>
       </section>
     </>

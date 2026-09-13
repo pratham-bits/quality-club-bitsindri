@@ -1446,6 +1446,68 @@ p {
    EVENTS
 ========================= */
 
+/* =========================
+   EVENT YEAR FILTER
+========================= */
+
+.event-year-filter {
+  width: fit-content;
+  margin: 0 auto 44px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 5px;
+
+  background: #f3eff7;
+  border: 1px solid rgba(102, 51, 168, 0.10);
+  border-radius: 999px;
+
+  box-shadow: 0 8px 24px rgba(8, 41, 74, 0.05);
+}
+
+.event-year-filter button {
+  appearance: none;
+  border: 0;
+  outline: none;
+
+  padding: 10px 20px;
+
+  border-radius: 999px;
+  background: transparent;
+
+  color: #64748B;
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.event-year-filter button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--purple);
+}
+
+.event-year-filter button.active {
+  background: var(--navy);
+  color: #ffffff;
+  box-shadow: 0 5px 14px rgba(8, 41, 74, 0.16);
+}
+
+.event-year-filter button.active:hover {
+  background: var(--navy);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
 .events-section {
   padding-top: 70px;
 }
@@ -1573,10 +1635,63 @@ p {
 ========================= */
 
 .event-content {
-  padding: 50px 52px;
+  padding: 50px 52px 22px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ============================================================
+   EVENT BOTTOM ACTION ROW
+   ============================================================ */
+
+.event-action-row {
+  margin-top: auto;
+  padding-top: 18px;
+  min-height: 0;
+
+  display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 20px;
+}
+
+.event-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.event-date svg {
+  flex-shrink: 0;
+}
+
+.event-linkedin {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  color: var(--navy);
+  border: 1px solid var(--border);
+  background: #fff;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.event-linkedin:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  background: var(--navy);
+  border-color: var(--navy);
 }
 
 .event-content h3 {
@@ -1633,6 +1748,59 @@ p {
   flex: none;
   margin-top: 2px;
   color: var(--purple);
+}
+
+/* ============================================================
+   EVENT BOTTOM ACTION ROW
+   Date + LinkedIn
+   ============================================================ */
+
+.event-action-row {
+  margin-top: auto;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 42px;
+}
+
+.event-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.event-date svg {
+  flex-shrink: 0;
+}
+
+.event-linkedin {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--navy);
+  border: 1px solid var(--border);
+  background: #fff;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.event-linkedin:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  background: var(--navy);
+  border-color: var(--navy);
 }
 
 /* =========================
@@ -1747,6 +1915,18 @@ p {
 
   .event-highlights li {
     font-size: 0.9rem;
+  }
+
+  .event-year-filter {
+    max-width: 100%;
+    margin-bottom: 36px;
+    overflow-x: auto;
+  }
+
+  .event-year-filter button {
+    flex: 0 0 auto;
+    padding: 9px 16px;
+    font-size: 0.82rem;
   }
 }
 
