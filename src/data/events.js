@@ -228,6 +228,30 @@ export const events = [
       "/images/events/event-7/image-3.jpg",
     ],
   },
+
+  {
+    title: "Quality Club Orientation Program – December 2024",
+    date: "3 December 2024",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_qualityclub-bitsindri-ifqm-activity-7290242729052160000-LZb-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
+    contentHeading: "Building a Culture of Quality at BIT Sindri",
+    description:
+      "The Quality Club, BIT Sindri organized an orientation program in December 2024 to introduce students to the fundamentals of quality management, leadership, problem-solving, and continuous improvement. The session familiarized students with the vision and activities of the Quality Club while encouraging them to develop a quality-oriented mindset for their academic and professional growth.",
+    highlights: [
+      "Quality Management Principles – Understanding the fundamentals of quality and their relevance in professional environments.",
+      "Problem-Solving & Teamwork – Interactive activities designed to develop analytical thinking, collaboration, and structured problem-solving skills.",
+      "Industry Applications – Exploring how quality management principles and practices are applied in real-world industrial environments.",
+      "Quality Quiz – An interactive quiz to reinforce students’ understanding of quality-related concepts.",
+      "IFQM Symposium Experience – Quality Club members shared their experiences and key learnings from the IFQM Symposium held in Delhi on 15–16 October 2024.",
+      "Faculty Guidance – Insights from Prof. (Dr.) Ghanshyam, Dr. Om Prakash, and Dr. Maya Rajnarayan Ray on quality management and continuous improvement."
+    ],
+    images: [
+      "/images/events/event-8/image-1.jpeg",
+      "/images/events/event-8/image-2.png",
+      "/images/events/event-8/image-3.jpg",
+      "/images/events/event-8/image-4.png",
+      "/images/events/event-8/image-5.png",
+    ],
+  },
 ];
 
 

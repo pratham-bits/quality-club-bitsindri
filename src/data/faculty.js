@@ -82,7 +82,7 @@ export const facultyLeaders = [
   },
 
   {
-    name: "Prof. Maya Rajnarayan Ray",
+    name: "Dr. Maya Rajnarayan Ray",
     designation: "Professor-in-Charge",
     department: "",
     institute: "BIT Sindri",
