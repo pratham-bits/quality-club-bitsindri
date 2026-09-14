@@ -132,7 +132,7 @@ export default function About() {
               <div className="about-bitsindri-logo">
                 <img
                   src="/images/bit-sindri-logo.png"
-                  alt="Birla Institute of Technology, Sindri"
+                  alt="Birsa Institute of Technology, Sindri"
                 />
               </div>
             </Reveal>
