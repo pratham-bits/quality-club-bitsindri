@@ -1,9 +1,7 @@
 import SectionHeading from "../components/SectionHeading";
 import Reveal from "../components/Reveal";
-import FacultyLeaderCard from "../components/FacultyLeaderCard";
 import TeamMemberCard from "../components/TeamMemberCard";
 
-import { facultyLeaders } from "../data/faculty";
 import { teamMembers, teamYear } from "../data/team";
 import { coreMembers } from "../data/coreMembers";
 import { motion } from "framer-motion";
@@ -29,27 +27,6 @@ export default function Team() {
             together to build a culture of quality, innovation
             and continuous improvement.
           </p>
-        </div>
-      </section>
-
-      {/* =====================================================
-          FACULTY LEADERSHIP
-          ===================================================== */}
-      <section className="section faculty-section">
-        <div className="container">
-          <SectionHeading
-            eyebrow="FACULTY LEADERSHIP"
-            title="Guided by experience. Driven by students."
-            text="The Quality Club operates under the guidance of faculty leaders who support its vision, activities and continued development."
-          />
-
-          <div className="faculty-grid">
-            {facultyLeaders.map((leader) => (
-              <Reveal key={leader.designation}>
-                <FacultyLeaderCard leader={leader} />
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -9,6 +9,8 @@ import {
 import { motion } from "framer-motion";
 import SectionHeading from "../components/SectionHeading";
 import Reveal from "../components/Reveal";
+import FacultyLeaderCard from "../components/FacultyLeaderCard";
+import { facultyLeaders } from "../data/faculty";
 
 const mission = [
   "Teach quality concepts in a practical way.",
@@ -84,6 +86,65 @@ export default function About() {
         </div>
       </section>
 
+      <section className="section about-bitsindri-section">
+        <div className="container">
+          <div className="about-bitsindri-grid">
+            <Reveal>
+              <div className="about-bitsindri-content">
+                <span className="eyebrow">ABOUT THE INSTITUTE</span>
+
+                <h2>About BIT Sindri</h2>
+
+                <div className="section-accent" />
+
+                <p>
+                  Birla Institute of Technology, Sindri (BIT Sindri), is one of the
+                  premier engineering institutions in Jharkhand, known for its strong
+                  academic foundation, technical education, and industry-oriented
+                  learning environment.
+                </p>
+
+                <p>
+                  The institute has played an important role in developing skilled
+                  engineers and professionals by combining theoretical knowledge with
+                  practical exposure, innovation, research, and professional values.
+                </p>
+
+                <p>
+                  With a vibrant academic environment and a strong emphasis on
+                  excellence, BIT Sindri provides students with opportunities to
+                  learn, collaborate, explore new ideas, and prepare themselves for
+                  the challenges of the professional world.
+                </p>
+
+                <a
+                  className="text-link"
+                  href="https://www.bitsindri.ac.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit BIT Sindri <span>↗</span>
+                </a>
+              </div>
+            </Reveal>
+
+            <Reveal>
+              <div className="about-bitsindri-highlight">
+                <div className="bitsindri-highlight-card">
+                  <span className="highlight-number">BIT</span>
+
+                  <h3>Birla Institute of Technology, Sindri</h3>
+
+                  <p>
+                    A centre of engineering education, technical learning,
+                    innovation, and professional development.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
       <section className="section soft-section">
         <div className="container">
           <SectionHeading
@@ -170,6 +231,27 @@ export default function About() {
               Explore IFQM <span>↗</span>
             </a>
           </Reveal>
+        </div>
+      </section>
+
+      {/* =====================================================
+          FACULTY GUIDANCE
+          ===================================================== */}
+      <section className="section faculty-section">
+        <div className="container">
+          <SectionHeading
+            eyebrow="FACULTY GUIDANCE"
+            title="Guided by experience. Driven by students."
+            text="The Quality Club operates under the guidance of faculty leaders who support its vision, activities and continued development."
+          />
+
+          <div className="faculty-grid">
+            {facultyLeaders.map((leader) => (
+              <Reveal key={leader.designation}>
+                <FacultyLeaderCard leader={leader} />
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
     </>

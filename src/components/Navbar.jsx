@@ -40,21 +40,6 @@ export default function Navbar() {
               alt="Quality Club, BIT Sindri"
             />
           </Link>
-
-          <span className="brand-divider" aria-hidden="true" />
-
-          <a
-            href={siteConfig.links.ifqm}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="brand ifqm-brand"
-            aria-label="Indian Foundation for Quality Management"
-          >
-            <img
-              src="/images/ifqm-logo-header.svg"
-              alt="Indian Foundation for Quality Management"
-            />
-          </a>
         </div>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
