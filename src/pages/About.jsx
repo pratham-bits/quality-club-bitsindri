@@ -98,7 +98,7 @@ export default function About() {
                 <div className="section-accent" />
 
                 <p>
-                  Birla Institute of Technology, Sindri (BIT Sindri), is one of the
+                  Birsa Institute of Technology, Sindri (BIT Sindri), is one of the
                   premier engineering institutions in Jharkhand, known for its strong
                   academic foundation, technical education, and industry-oriented
                   learning environment.
