@@ -129,17 +129,11 @@ export default function About() {
             </Reveal>
 
             <Reveal>
-              <div className="about-bitsindri-highlight">
-                <div className="bitsindri-highlight-card">
-                  <span className="highlight-number">BIT</span>
-
-                  <h3>Birla Institute of Technology, Sindri</h3>
-
-                  <p>
-                    A centre of engineering education, technical learning,
-                    innovation, and professional development.
-                  </p>
-                </div>
+              <div className="about-bitsindri-logo">
+                <img
+                  src="/images/bit-sindri-logo.png"
+                  alt="Birla Institute of Technology, Sindri"
+                />
               </div>
             </Reveal>
           </div>

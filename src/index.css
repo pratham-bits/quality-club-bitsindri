@@ -3793,7 +3793,7 @@ p {
   margin-top: 8px;
 }
 
-.about-bitsindri-highlight {
+/* .about-bitsindri-highlight {
   display: flex;
   justify-content: center;
 }
@@ -3830,6 +3830,20 @@ p {
   margin: 0;
   color: var(--muted);
   line-height: 1.7;
+} */
+.about-bitsindri-logo {
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.about-bitsindri-logo img {
+  width: min(100%, 360px);
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 800px) {
@@ -3843,7 +3857,15 @@ p {
     gap: 42px;
   }
 
-  .about-bitsindri-highlight {
+  /* .about-bitsindri-highlight {
     justify-content: flex-start;
+  } */
+  .about-bitsindri-logo {
+    min-height: 260px;
+    padding: 20px;
+  }
+
+  .about-bitsindri-logo img {
+    width: min(100%, 300px);
   }
 }
