@@ -98,23 +98,15 @@ export default function About() {
                 <div className="section-accent" />
 
                 <p>
-                  Birsa Institute of Technology, Sindri (BIT Sindri), is one of the
-                  premier engineering institutions in Jharkhand, known for its strong
-                  academic foundation, technical education, and industry-oriented
-                  learning environment.
+                  Birsa Institute of Technology, Sindri (BIT Sindri), established in 1949, is one of Jharkhand’s premier and oldest engineering institutions. Located in the industrial heartland of Sindri, Dhanbad, the institute has built a remarkable legacy of technical education, academic excellence, and professional development over the decades.
                 </p>
 
                 <p>
-                  The institute has played an important role in developing skilled
-                  engineers and professionals by combining theoretical knowledge with
-                  practical exposure, innovation, research, and professional values.
+                  With a strong foundation in engineering education, practical learning, research, and innovation, BIT Sindri provides students with an environment that encourages technical curiosity, creativity, collaboration, and problem-solving. Its diverse academic programs, laboratories, technical clubs, projects, and industry exposure help bridge the gap between classroom knowledge and real-world engineering.
                 </p>
 
                 <p>
-                  With a vibrant academic environment and a strong emphasis on
-                  excellence, BIT Sindri provides students with opportunities to
-                  learn, collaborate, explore new ideas, and prepare themselves for
-                  the challenges of the professional world.
+                  Over the years, BIT Sindri has nurtured generations of engineers, innovators, researchers, and professionals who have contributed across industries and institutions in India and beyond. Today, the institute continues to uphold its legacy while embracing modern technology, innovation, and emerging opportunities, remaining a respected centre of engineering education in the region.
                 </p>
 
                 <a
