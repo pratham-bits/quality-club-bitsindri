@@ -73,7 +73,7 @@ export const coreMembers = [
         designation: "Content Writing",
         image: "/images/team/core-members/Abhavya-ranjan.jpg",
         email: "abhavya538@gmail.com",
-        linkedin: "linkedin.com/in/abhavya-ra17229207",
+        linkedin: "https://www.linkedin.com/in/abhavya-ra17229207?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
 
     {
