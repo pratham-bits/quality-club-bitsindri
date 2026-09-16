@@ -106,11 +106,7 @@ export default function Home() {
 
           <Reveal>
             <p className="lead">
-              Quality Club is a student initiative at BIT Sindri, started with
-              the support of the Indian Foundation for Quality Management
-              (IFQM). Its purpose is to help students understand how work is
-              actually done in the real world—not just how it is written in
-              textbooks.
+            Quality is more than a concept in a textbook, it is a way of thinking. The Quality Club at BIT Sindri, initiated by IFQM, gives students an opportunity to explore this mindset through practical activities, problem-solving, and real-world examples.
             </p>
 
             <Link className="text-link" to="/about">
