@@ -113,8 +113,31 @@ p {
 .brand-group {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 0px;
   min-width: 0;
+  flex-shrink: 1;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  line-height: 1;
+}
+
+.brand-text span {
+  color: var(--navy);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.brand-text small {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .brand {
@@ -126,6 +149,8 @@ p {
 .quality-brand {
   width: 105px;
   height: 64px;
+  flex-shrink: 1;
+  margin: 0;
 }
 
 .quality-brand img {
@@ -1695,13 +1720,13 @@ p {
   flex-shrink: 0;
 }
 
-.event-linkedin {
-  width: 34px;
-  height: 34px;
+.event-social-link {
+  width: 36px;
+  height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9px;
+  border-radius: 10px;
   color: var(--navy);
   border: 1px solid var(--border);
   background: #fff;
@@ -1712,7 +1737,7 @@ p {
     border-color 0.25s ease;
 }
 
-.event-linkedin:hover {
+.event-social-link:hover {
   transform: translateY(-3px);
   color: #fff;
   background: var(--navy);

@@ -4,6 +4,7 @@ import {
   CalendarDays,
   CheckCircle2,
   ExternalLink,
+  Instagram,
   Linkedin,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -246,6 +247,19 @@ function PastEventCard({ event }) {
               title="View LinkedIn post"
             >
               <Linkedin size={19} />
+            </a>
+          )}
+
+          {event.instagram && (
+            <a
+              href={event.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="event-social-link event-instagram"
+              aria-label={`View ${event.title} on Instagram`}
+              title="View Instagram post"
+            >
+              <Instagram size={19} />
             </a>
           )}
         </div>

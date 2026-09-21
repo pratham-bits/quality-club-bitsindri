@@ -252,6 +252,28 @@ export const events = [
       "/images/events/event-8/image-5.png",
     ],
   },
+
+  {
+    title: "Quality Club Orientation Session – 2026 Batch",
+    date: "20 September 2026",
+    linkedin: "https://www.linkedin.com/posts/quality-club-bit-sindri_quality-club-bit-sindri-the-expert-in-anything-activity-7507396511731851265-TlTW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNRSp4B9iMaCHbQhdDv8AhnejowtNvr6As",
+    instagram: "",
+    contentHeading: "Building a Quality Mindset from the Beginning",
+    description:
+      "The Quality Club, BIT Sindri organized an orientation session for the 2026 batch, bringing together students from Civil, Metallurgical & Materials, and Cyber Security branches. The session introduced freshers to the vision, activities, and initiatives of the Quality Club while highlighting the importance of quality thinking throughout an engineer's journey.",
+    highlights: [
+      "Quality Beyond Textbooks – Understanding the role of quality thinking in an engineer’s journey.",
+      "Real-World Applications – Exploring systematic problem-solving and continuous improvement across diverse engineering domains.",
+      "Quality Tools – Introduction to the PDCA Cycle and Pareto Principle through practical examples.",
+      "Quality Mindset – Encouraging critical thinking, structured problem-solving, and continuous improvement from the beginning.",
+      "Interactive Session – Students actively participated through discussions, questions, and practical examples."
+    ],
+    images: [
+      "/images/events/event-9/image-1.jpg",
+      "/images/events/event-9/image-2.jpg",
+      "/images/events/event-9/image-3.jpg",
+    ],
+  },
 ];
 
 

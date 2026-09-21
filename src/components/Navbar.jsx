@@ -40,6 +40,11 @@ export default function Navbar() {
               alt="Quality Club, BIT Sindri"
             />
           </Link>
+
+          <div className="brand-text">
+            <span>QUALITY CLUB</span>
+            <small>BIT SINDRI</small>
+          </div>
         </div>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
