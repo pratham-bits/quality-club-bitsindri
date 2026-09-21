@@ -153,8 +153,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="section partnership-section">
+      
+       <section className="section partnership-section">
         <div className="container partnership">
           <Reveal>
             <span className="eyebrow">IN COLLABORATION WITH</span>
@@ -175,26 +175,6 @@ export default function Home() {
             >
               Visit IFQM <ArrowUpRightIcon />
             </a>
-          </Reveal>
-
-          <Reveal className="ifqm-card">
-            <img
-              src="/images/ifqm-logo-header.svg"
-              alt="Indian Foundation for Quality Management"
-            />
-
-            <div className="partner-points">
-              {[
-                "Expert guidance",
-                "Global standards",
-                "Industry methods",
-                "Professional exposure",
-              ].map((item) => (
-                <div key={item}>
-                  <CheckCircle2 size={19} /> {item}
-                </div>
-              ))}
-            </div>
           </Reveal>
         </div>
       </section>
