@@ -11,7 +11,7 @@ export const ongoingEvents = [
       "Quiz Theme – General Aptitude and Quality Management Concepts.",
       "Competition & Learning – A blend of knowledge, curiosity, and competitive spirit.",
       "National Platform – Connecting students through a nationwide learning and competitive experience.",
-      "Powered by Unstop – Hosted in association with Unstop, with support from IFQM.",
+      "Powered by Unstop – Hosted in association with Unstop.",
       "Registration Deadline – 30 September 2026, 11:59 PM IST.",
     ],
     images: "/images/events/ongoing/image-1.jpg",
