@@ -1,7 +1,10 @@
 export const ongoingEvents = [
   {
     title: "Q-Edge Quiz",
+    popupstartDate: "2026-09-22",
+    popupendDate: "2026-10-01",
     date: "1 October 2026",
+    registrationDeadline: "30 September 2026, 11:59 PM IST",
     linkedin: "https://lnkd.in/p/dp3h2mEv",
     registrationLink: "https://unstop.com/o/pxtgyY4?lb=QAr4IJeb&utm_medium=Share&utm_source=quizzes&utm_campaign=Hansam_1",
     description:

@@ -429,7 +429,7 @@ export default function Events() {
     ONGOING EVENTS
     ====================================================== */}
       {ongoingEvents.length > 0 && (
-        <section className="section ongoing-events-section">
+        <section id="ongoing-events" className="section ongoing-events-section">
           <div className="container">
             <SectionHeading
               eyebrow="CURRENTLY ACTIVE"
