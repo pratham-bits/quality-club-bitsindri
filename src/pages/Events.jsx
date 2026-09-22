@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import SectionHeading from "../components/SectionHeading";
 import Reveal from "../components/Reveal";
-import { upcomingEvents, pastEvents } from "../data/events";
+import { ongoingEvents, upcomingEvents, pastEvents } from "../data/events";
 
 /*
  * ============================================================
@@ -97,6 +97,87 @@ function EventImageGallery({ images, title }) {
         </>
       )}
     </div>
+  );
+}
+
+/*
+ * ============================================================
+ * ONGOING EVENT CARD
+ * ============================================================
+ */
+function OngoingEventCard({ event }) {
+  return (
+    <article className="ongoing-event-card">
+      <div className="ongoing-event-poster">
+        <img
+          src={event.images}
+          alt={`${event.title} poster`}
+        />
+      </div>
+
+      <div className="ongoing-event-content">
+        {/* <span className="ongoing-event-label">
+          ONGOING EVENT
+        </span> */}
+
+        <h3>{event.title}</h3>
+
+        <div className="event-accent" />
+
+        {event.date && (
+          <div className="ongoing-event-date">
+            <CalendarDays size={18} />
+            <span>{event.date}</span>
+          </div>
+        )}
+
+        <p className="ongoing-event-description">
+          {event.description}
+        </p>
+
+        {event.highlights?.length > 0 && (
+          <ul className="ongoing-event-highlights">
+            {event.highlights.map((highlight) => (
+              <li key={highlight}>
+                <CheckCircle2 size={18} />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <div className="ongoing-event-footer">
+          {event.registrationLink && (
+            <a
+              href={event.registrationLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ongoing-event-register"
+            >
+              Register Now <ExternalLink size={17} />
+            </a>
+          )}
+
+          <div className="ongoing-event-status">
+            <span className="status-dot" />
+            <span>Currently Ongoing</span>
+          </div>
+
+          {event.linkedin && (
+            <a
+              href={event.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="event-social-link"
+              aria-label={`View ${event.title} on LinkedIn`}
+              title="View LinkedIn post"
+            >
+              <Linkedin size={19} />
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
   );
 }
 
@@ -345,16 +426,38 @@ export default function Events() {
       </section>
 
       {/* ======================================================
+    ONGOING EVENTS
+    ====================================================== */}
+      {ongoingEvents.length > 0 && (
+        <section className="section ongoing-events-section">
+          <div className="container">
+            <SectionHeading
+              eyebrow="CURRENTLY ACTIVE"
+              title="Ongoing events."
+            />
+
+            <div className="ongoing-events-list">
+              {ongoingEvents.map((event) => (
+                <Reveal key={event.title}>
+                  <OngoingEventCard event={event} />
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ======================================================
           UPCOMING EVENTS
           ====================================================== */}
-      <section className="section upcoming-events-section">
-        <div className="container">
-          <SectionHeading
-            eyebrow="WHAT'S NEXT"
-            title="Upcoming events."
-          />
+      {upcomingEvents.length > 0 && (
+        <section className="section upcoming-events-section">
+          <div className="container">
+            <SectionHeading
+              eyebrow="WHAT'S NEXT"
+              title="Upcoming events."
+            />
 
-          {upcomingEvents.length > 0 ? (
             <div className="upcoming-events-list">
               {upcomingEvents.map((event) => (
                 <Reveal key={event.title}>
@@ -362,13 +465,9 @@ export default function Events() {
                 </Reveal>
               ))}
             </div>
-          ) : (
-            <Reveal>
-              <NoUpcomingEvents />
-            </Reveal>
-          )}
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
 
       {/* ======================================================
           PAST EVENTS

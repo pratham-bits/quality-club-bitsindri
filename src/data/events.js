@@ -1,3 +1,24 @@
+export const ongoingEvents = [
+  {
+    title: "Q-Edge Quiz",
+    date: "1 October 2026",
+    linkedin: "https://lnkd.in/p/dp3h2mEv",
+    registrationLink: "https://unstop.com/o/pxtgyY4?lb=QAr4IJeb&utm_medium=Share&utm_source=quizzes&utm_campaign=Hansam_1",
+    description:
+      "The Quality Club, Birsa Institute of Technology (BIT) Sindri, proudly presents Q-Edge Quiz, a nationwide quiz competition organized in association with Unstop. The quiz brings together General Aptitude and Quality Management Concepts, giving students an opportunity to test their knowledge, strengthen their understanding, and compete on a national platform.",
+    highlights: [
+      "Open to All Students – Students from across the country can participate.",
+      "Quiz Theme – General Aptitude and Quality Management Concepts.",
+      "Competition & Learning – A blend of knowledge, curiosity, and competitive spirit.",
+      "National Platform – Connecting students through a nationwide learning and competitive experience.",
+      "Powered by Unstop – Hosted in association with Unstop, with support from IFQM.",
+      "Registration Deadline – 30 September 2026, 11:59 PM IST.",
+    ],
+    images: "/images/events/ongoing/image-1.jpg",
+  },
+];
+
+
 /*
  * ============================================================
  * UPCOMING EVENTS
@@ -69,6 +90,19 @@ export const upcomingEvents = [
    *
    * and fill in the event details and registration link.
    */
+  // {
+  //   title: "Quality Summit 2026",
+  //   date: "15 November 2026",
+  //   description:
+  //     "An upcoming learning session focused on quality management, innovation, and excellence.",
+  //   highlights: [
+  //     "Interactive learning session",
+  //     "Quality Management concepts",
+  //     "Industry-oriented insights",
+  //   ],
+  //   poster: "/images/events/upcoming/image-1.jpg",
+  //   registrationLink: "",
+  // },
 ];
 
 
