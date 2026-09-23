@@ -6,7 +6,7 @@ The website presents the club's vision, faculty leadership, student executive co
 
 The project is designed so that future club members can update content and maintain the website without needing to modify the core layout unnecessarily.
 
-**Live Site:** `https://quality-club-bitsindri.vercel.app/`
+**Live Site:** `https://qualityclub.bitsindri.ac.in/`
 
 ---
 
